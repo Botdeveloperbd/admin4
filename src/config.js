@@ -24,10 +24,10 @@ const config = {
   
   // Production Environment
   production: {
-    API_BASE_URL: 'https://web-production-f200.up.railway.app',
-    SOCKET_URL: 'https://web-production-f200.up.railway.app',
-    MEDIA_BASE_URL: 'https://web-production-f200.up.railway.appp/media',
-    FRONTEND_URL: 'https://admin-8f9s.onrender.com'
+    API_BASE_URL: 'https://web-production-c6b5.up.railway.app/',
+    SOCKET_URL: 'https://web-production-c6b5.up.railway.app/',
+    MEDIA_BASE_URL: 'https://web-production-c6b5.up.railway.app/media',
+    FRONTEND_URL: 'https://admin4-9d8v.onrender.com'
   },
   
   // Staging Environment
@@ -40,10 +40,10 @@ const config = {
   
   // Render Environment (for Render deployment)
   render: {
-    API_BASE_URL: 'https://web-production-f200.up.railway.app',
-    SOCKET_URL: 'https://web-production-f200.up.railway.app',
-    MEDIA_BASE_URL: 'https://web-production-f200.up.railway.appp/media',
-    FRONTEND_URL: 'https://admin-8f9s.onrender.com'
+    API_BASE_URL: 'https://web-production-c6b5.up.railway.app/',
+    SOCKET_URL: 'https://web-production-c6b5.up.railway.app/',
+    MEDIA_BASE_URL: 'https://web-production-c6b5.up.railway.app/media',
+    FRONTEND_URL: 'https://admin4-9d8v.onrender.com'
   }
 };
 
@@ -106,7 +106,7 @@ export const getMediaUrl = (url) => {
     // If it's a Telegram API URL, use a CORS proxy to avoid CORS issues
     if (url.includes('api.telegram.org')) {
       // Use a CORS proxy to avoid CORS issues
-      return `https://ballast.proxy.rlwy.net:36896/${url}`;
+      return `https://shuttle.proxy.rlwy.net:36562/${url}`;
     }
     return url;
   }
@@ -134,5 +134,6 @@ const defaultExport = {
 };
 
 export default defaultExport; 
+
 
 
